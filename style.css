@@ -1,0 +1,70 @@
+body{
+    /* CSS gradients let you display smooth transitions between two or more specified colors.
+
+CSS defines three types of gradients:
+
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+Conic Gradients (rotated around a center point) */
+    background: linear-gradient(#b8dafc,white);
+
+    overflow: hidden;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.hrLine{
+    border-bottom: 2px solid lightgray;
+}
+.btn{
+    width: fit-content;
+    padding:8px;
+    cursor:pointer;
+    border: 1px solid rgb(239, 233, 233);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#output-message{
+    text-align: center;
+    text-transform: uppercase;
+}
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    /*  converting container into flex box */
+    justify-content: center;
+    align-items: center;
+}
+.message-container{
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 560px;
+    height: auto;
+    margin: auto;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.491) ;
+}
+#inputBox{
+    width: 85%;
+    padding: 8px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+@media(max-width:480px){
+    #inputBox{
+        width: 75%;
+    }
+}
